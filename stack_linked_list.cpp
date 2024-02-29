@@ -48,6 +48,7 @@ class Node{
       int result=to_be_removed->data;
       delete to_be_removed;
       this->head = new_head;
+      this->current_size--;
       return result;
   }
   int getTop(){
